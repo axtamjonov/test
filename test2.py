@@ -7,3 +7,11 @@ cursor.execute('''insert into medicine (id, name, deadline, narxi) values (00, "
 cursor.execute('''insert into medicine (id, name, deadline, narxi) values (01, "pratstamol" ,2027, "2500ming" )''')
 cursor.execute('''insert into medicine (id, name, deadline, narxi) values (02, "mezim" ,2027, "3500ming" )''')
 name = input("dorini nomini kiriting: ")
+cursor.execute('''select * from medicine where name==[name]''')
+result1 = cursor.fetchall()
+for el in result1:
+    if name in el:
+        print("Mana malumotlar")
+        print(f"saqlash muddati {el[2]}")
+        print(f"narxi {el[3]}")
+con.commit()
