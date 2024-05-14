@@ -15,3 +15,5 @@ for el in result1:
         print(f"saqlash muddati {el[2]}")
         print(f"narxi {el[3]}")
 con.commit()
+def hello():
+    pass
