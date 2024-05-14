@@ -17,3 +17,5 @@ for el in result1:
 con.commit()
 def hello():
     pass
+def hasan():
+    ...
